@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="">
 <head>
   <meta charset="UTF-8">
   <title>Mad Lib</title>
   <link href="css/style.css" rel="stylesheet">
+  <script src="https://code.angularjs.org/1.3.10/angular.js"></script>
 </head>
 <body>
   <header class="flow">
@@ -14,12 +15,36 @@
     </div>
   </header>
   <section class="flow">
-    <div class="inputs stretch"></div>
+    <div class="inputs stretch">
+      <h1>Provide the following words:</h1>
+      <input type="text" ng-model="relative1" placeholder="RELATIVE"/>
+      <input type="text" ng-model="adjective1" placeholder="ADJECTIVE"/>
+      <input type="text" ng-model="adjective2" placeholder="ADJECTIVE"/>
+      <input type="text" ng-model="adjective3" placeholder="ADJECTIVE"/>
+      <input type="text" ng-model="person1" placeholder="NAME OF PERSON IN ROOM" size="28"/>
+      <input type="text" ng-model="adjective4" placeholder="ADJECTIVE"/>
+      <input type="text" ng-model="adjective5" placeholder="ADJECTIVE"/>
+      <input type="text" ng-model="verbed" placeholder="VERB ENDING IN 'ED'"/>
+      <input type="text" ng-model="body" placeholder="BODY PART"/>
+      <input type="text" ng-model="verbing" placeholder="VERB ENDING IN 'ING'" size="20"/>
+      <input type="text" ng-model="nounpl" placeholder="NOUN (PLURAL)"/>
+      <input type="text" ng-model="noun" placeholder="NOUN"/>
+      <input type="text" ng-model="adverb" placeholder="ADVERB"/>
+      <input type="text" ng-model="verb1" placeholder="VERB"/>
+      <input type="text" ng-model="verb2" placeholder="VERB"/>
+      <input type="text" ng-model="relative2" placeholder="RELATIVE"/>
+      <input type="text" ng-model="person2" placeholder="PERSON IN ROOM"/>
+    </div>
   </section>
   <section class="flow">
-    <div class="story stretch"></div>
+    <div class="story stretch">
+      <p> Dear {{ relative1 }},<br>
+        I am having a(n) {{ adjective1 }} time at camp. The counselour is {{ adjective2 }} and the food is {{ adjective3 }}. I met {{ person1 }} and we became {{ adjective4 }} friends. Unfortunately, {{ person1 }} is {{ adjective5 }} and I {{ verbed }} my {{ body }} so we couldn`t go {{ verbing }} like everybody else. I need more {{ nounpl }} and a {{ noun }} sharpener, so please {{ adverb }} {{ verb1 }} more when you {{ verb2 }} back.<br>
+        Your {{ relative2 }},<br>
+        {{ person2 }}
+      </p>
+    </div>
   </section>
-
 
 </body>
 </html>
