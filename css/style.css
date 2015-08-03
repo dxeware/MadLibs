@@ -1,0 +1,49 @@
+body {
+  margin: 5em 5em;
+  font-family: "Lucida Grande", Arial, Serif;
+}
+
+.flow {
+    display: flex;
+}
+
+.flow .title {
+  height: 120px;
+  width: 150px;
+  border-style: solid;
+}
+
+.flow .inputs {
+  height: 300px;
+  width: 150px;
+  border-style: solid;
+}
+
+.flow .story {
+  height: 600px;
+  width: 150px;
+  border-style: solid;
+}
+
+.flow .stretch {
+    flex: 1;
+}
+
+.smiley {
+  width: 10em;
+  background: url("../images/mad-lib-happy-face.png") center no-repeat;
+  background-size: 80%;
+  border-style: solid;
+}
+
+.title-image {
+  height: 3em;
+  background: url("../images/ng-mad-libs-logo.png") center no-repeat;
+  background-size: 35%;
+}
+
+.title-heading {
+  font-size: 32px;
+  text-align: center;
+  margin: 10px auto;
+}
