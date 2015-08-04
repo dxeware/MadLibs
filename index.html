@@ -40,7 +40,8 @@
     </section>
     <section class="flow">
       <div class="story stretch">
-        <p> Dear {{ relative1 }},<br>
+        {{ fillIn() }}
+        <p> Dear <span ng-init="answers[0]='______'">{{ answers[0] }}</span>,<br>
           I am having a(n) {{ adjective1 }} time at camp. The counselour is {{ adjective2 }} and the food is {{ adjective3 }}. I met {{ person1 }} and we became {{ adjective4 }} friends. Unfortunately, {{ person1 }} is {{ adjective5 }} and I {{ verbed }} my {{ body }} so we couldn`t go {{ verbing }} like everybody else. I need more {{ nounpl }} and a {{ noun }} sharpener, so please {{ adverb }} {{ verb1 }} more when you {{ verb2 }} back.<br>
           Your {{ relative2 }},<br>
           {{ person2 }}

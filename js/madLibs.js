@@ -1,6 +1,7 @@
 angular.module('madLibs', [])
   .controller('inputCtrl', function($scope) {
 
+        console.log("controller called...");
         //Text values for input placeholder
         $scope.adjtext = "ADJECTIVE";
         $scope.relativetext = "RELATIVE";
@@ -13,5 +14,10 @@ angular.module('madLibs', [])
         $scope.adverbtext = "ADVERB";
         $scope.verbtext = "VERB";
 
+        $scope.answers = [];
 
+        $scope.fillIn = function() {
+           $scope.answers[0] = $scope.relative1;
+           console.log("fill controller called...");
+        };
     });
