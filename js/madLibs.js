@@ -65,4 +65,33 @@ angular.module('madLibs', [])
             }
 
         };
+
+        $scope.startOver = function() {
+            $scope.showStory=false;
+            $scope.showInputs=true;
+
+            for (var i = 0; i < $scope.answers.length; i++) {
+                $scope.answers[i] = "";
+            }
+
+            $scope.relative1 = "";
+            $scope.adjective1 = "";
+            $scope.adjective2 = "";
+            $scope.adjective3 = "";
+            $scope.person1 = "";
+            $scope.adjective4 = "";
+            $scope.person1 = "";
+            $scope.adjective5 = "";
+            $scope.verbed = "";
+            $scope.body = "";
+            $scope.verbing = "";
+            $scope.nounpl = "";
+            $scope.noun = "";
+            $scope.adverb = "";
+            $scope.verb1 = "";
+            $scope.verb2 = "";
+            $scope.hugenumber = "";
+            $scope.relative2 = "";
+            $scope.person2 = "";
+        };
     });
