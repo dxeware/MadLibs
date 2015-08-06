@@ -73,6 +73,12 @@ input {
   font-weight: bold;
 }
 
+hr {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    background: black;
+}
+
 @media (max-width: 700px) {
   .inputs h1 {
     font-size: 18px;

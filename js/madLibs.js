@@ -20,6 +20,7 @@ angular.module('madLibs', [])
 
         $scope.answers = [];
 
+        // Fill in the user's answers for story
         $scope.fillIn = function() {
             $scope.answers[0] = $scope.relative1;
             $scope.answers[1] = $scope.adjective1;
@@ -44,6 +45,7 @@ angular.module('madLibs', [])
 
         };
 
+        // Validity checking of answers and show story is OK
         $scope.submit = function() {
             console.log("Caught form submission!");
 
@@ -66,6 +68,7 @@ angular.module('madLibs', [])
 
         };
 
+        // Reset in order to start over
         $scope.startOver = function() {
             $scope.showStory=false;
             $scope.showInputs=true;
