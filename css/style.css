@@ -68,6 +68,11 @@ input {
   font-size: 18px;
 }
 
+.error {
+  color: red;
+  font-weight: bold;
+}
+
 @media (max-width: 700px) {
   .inputs h1 {
     font-size: 18px;
@@ -76,3 +81,5 @@ input {
     font-size: 24px;
   }
 }
+
+
