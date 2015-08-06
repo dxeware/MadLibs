@@ -3,6 +3,7 @@ angular.module('madLibs', [])
 
         $scope.showInputs = true;
         $scope.showStory = false;
+        $scope.hugeMin = 2000;
 
         //Text values for input placeholder
         $scope.adjtext = "ADJECTIVE";
@@ -50,7 +51,7 @@ angular.module('madLibs', [])
             if( !$scope.myForm.$valid ) {
                 if( $scope.myForm.hugenumber.$error.min ) {
                     console.log('The huge number is too small');
-                    $scope.errorMsg = "The huge number is too small!";
+                    $scope.errorMsg = "The huge number must be >= " + $scope.hugeMin + "!";
                 } else {
                     console.log('All inputs are required');
                     $scope.errorMsg = "All inputs are required!";
