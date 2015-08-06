@@ -59,6 +59,9 @@ angular.module('madLibs', [])
             } else {
                 console.log('All inputs are OK');
                 $scope.errorMsg = "";
+                $scope.fillIn();
+                $scope.showInputs = false;
+                $scope.showStory = true;
             }
 
         };
