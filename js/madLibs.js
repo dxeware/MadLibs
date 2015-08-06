@@ -1,6 +1,9 @@
 angular.module('madLibs', [])
   .controller('inputCtrl', function($scope) {
 
+        $scope.showInputs = true;
+        $scope.showStory = false;
+
         //Text values for input placeholder
         $scope.adjtext = "ADJECTIVE";
         $scope.relativetext = "RELATIVE";
@@ -12,6 +15,7 @@ angular.module('madLibs', [])
         $scope.nountext = "NOUN";
         $scope.adverbtext = "ADVERB";
         $scope.verbtext = "VERB";
+        $scope.hugenumtext = "HUGE NUMBER";
 
         $scope.answers = [];
 
@@ -32,8 +36,20 @@ angular.module('madLibs', [])
             $scope.answers[13] = $scope.adverb;
             $scope.answers[14] = $scope.verb1;
             $scope.answers[15] = $scope.verb2;
-            $scope.answers[16] = $scope.relative2;
-            $scope.answers[17] = $scope.person2;
+            $scope.answers[16] = $scope.hugenumber;
+            $scope.answers[17] = $scope.relative2;
+            $scope.answers[18] = $scope.person2;
 
+
+        };
+
+        $scope.submit = function() {
+            console.log("Caught form submission!");
+
+            if( $scope.myForm.hugenumber.$error.min ) {
+                console.log('The huge number is too small');
+            } else {
+                console.log('The huge number is OK');
+}
         };
     });
