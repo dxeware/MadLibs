@@ -73,10 +73,18 @@ input {
   font-weight: bold;
 }
 
+button, input[type="submit"] {
+  float: right;
+  height: 2em;
+  width: 12em;
+  background-color: #989898;
+}
+
 hr {
     border: 0;
     border-bottom: 1px solid #ccc;
     background: black;
+    margin-top: 2em;
 }
 
 @media (max-width: 700px) {
