@@ -46,10 +46,19 @@ angular.module('madLibs', [])
         $scope.submit = function() {
             console.log("Caught form submission!");
 
-            if( $scope.myForm.hugenumber.$error.min ) {
-                console.log('The huge number is too small');
+            console.log("Form valid = " + $scope.myForm.$valid);
+            if( !$scope.myForm.$valid ) {
+                if( $scope.myForm.hugenumber.$error.min ) {
+                    console.log('The huge number is too small');
+                    $scope.errorMsg = "The huge number is too small!";
+                } else {
+                    console.log('All inputs are required');
+                    $scope.errorMsg = "All inputs are required!";
+                }
             } else {
-                console.log('The huge number is OK');
-}
+                console.log('All inputs are OK');
+                $scope.errorMsg = "";
+            }
+
         };
     });
