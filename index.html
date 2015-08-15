@@ -5,6 +5,7 @@
   <title>Mad Lib</title>
   <link href="css/style.css" rel="stylesheet">
   <script src="https://code.angularjs.org/1.3.10/angular.js"></script>
+  <script type="text/javascript" src="https://code.angularjs.org/1.3.10/angular-animate.min.js"></script>
   <script src="./js/madLibs.js"></script>
 </head>
 <body>
@@ -40,12 +41,15 @@
         <input type="text" ng-model="person2" placeholder="{{persontext}}" size="26" required/>
         <hr size="4" noshade>
         <span class="error" ng-model="errorMsg">{{ errorMsg }}</span>
+        <a>
+          <img class="rotator" ng-show="verified" alt="" src="./images/circular_arrows.png">
+        </a>
         <input type="submit" value="Generate My MadLib">
       </form>
       </div>
     </section>
     <section class="flow">
-      <div class="story stretch" ng-show="showStory">
+      <div class="story stretch" ng-show="verified && showStory">
         <p> Dear {{ relative1 }},<br>
           I am having a(n) {{ adjective1 }} time at camp. The counselor is {{ adjective2 }} and the food is {{ adjective3 }}. I met {{ person1 }} and we became {{ adjective4 }} friends. Unfortunately, {{ person1 }} is {{ adjective5 }} and I {{ verbed }} my {{ body }} so we couldn`t go {{ verbing }} like everybody else. I need more {{ nounpl }} and a {{ noun }} sharpener, so please {{ adverb }} {{ verb1 }} more when you {{ verb2 }} back. I miss you so much, it feels like {{ hugenumber }} days until I will be home!!! :)<br>
           Your {{ relative2 }},<br>

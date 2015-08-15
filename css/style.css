@@ -47,8 +47,24 @@ body {
   text-align: center;
   margin: 10px auto;
 }
+
 .inputs {
   padding: 1em 3em;
+
+}
+
+.inputs.ng-hide-remove,
+.inputs.ng-hide-add.ng-hide-add-active {
+  opacity: 0;
+  transition: 3s all ease-out;
+  transition-delay : 1s;
+}
+
+.inputs.ng-hide-remove.ng-hide-remove-active,
+.inputs.ng-hide-add {
+  opacity: 1;
+  transition: 0s all ease-out;
+
 }
 
 .inputs h1 {
@@ -62,6 +78,25 @@ input {
 
 .story {
   padding: 2em 4em;
+}
+
+.rotator.ng-hide-remove {
+  opacity: 1;
+  transition: 0s all linear;
+}
+
+.rotator.ng-hide-add.ng-hide-add-active,
+.story.ng-hide-remove,
+.story.ng-hide-add.ng-hide-add-active {
+  opacity: 0;
+  transition: 0s all linear;
+}
+
+.story.ng-hide-remove.ng-hide-remove-active,
+.story.ng-hide-add {
+  opacity: 1;
+  transition: 3s all linear;
+  transition-delay: 4s;
 }
 
 .story p {
@@ -85,6 +120,19 @@ hr {
     border-bottom: 1px solid #ccc;
     background: black;
     margin-top: 2em;
+}
+
+.rotator {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: auto;
+}
+
+.rotator.ng-hide-remove.ng-hide-remove-active,
+.rotator.ng-hide-add {
+  transition: all 3s ease-in-out;
+  transform: rotate(-360deg);
 }
 
 @media (max-width: 700px) {

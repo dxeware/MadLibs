@@ -1,8 +1,9 @@
-angular.module('madLibs', [])
+angular.module('madLibs', ['ngAnimate'])
   .controller('inputCtrl', function($scope) {
 
         $scope.showInputs = true;
         $scope.showStory = false;
+        $scope.verified = false;
         $scope.hugeMin = 2000;
 
         //Text values for input placeholder
@@ -17,6 +18,25 @@ angular.module('madLibs', [])
         $scope.adverbtext = "ADVERB";
         $scope.verbtext = "VERB";
         $scope.hugenumtext = "HUGE NUMBER";
+
+        $scope.relative1 = "Dixie";
+            $scope.adjective1 = "red";
+            $scope.adjective2 = "blue";
+            $scope.adjective3 = "green";
+            $scope.person1 = "Lucy";
+            $scope.adjective4 = "bumpy";
+            $scope.adjective5 = "crazy";
+            $scope.verbed = "danced";
+            $scope.body = "arm";
+            $scope.verbing = "swimming";
+            $scope.nounpl = "cars";
+            $scope.noun = "bed";
+            $scope.adverb = "slight";
+            $scope.verb1 = "ate";
+            $scope.verb2 = "step";
+            $scope.hugenumber = 7000;
+            $scope.relative2 = "cousin";
+            $scope.person2 = "Molly";
 
         // Validity checking of answers and show story is OK
         $scope.submit = function() {
@@ -34,6 +54,7 @@ angular.module('madLibs', [])
             } else {
                 console.log('All inputs are OK');
                 $scope.errorMsg = "";
+                $scope.verified = true;
                 $scope.showInputs = false;
                 $scope.showStory = true;
             }
@@ -42,27 +63,28 @@ angular.module('madLibs', [])
 
         // Reset in order to start over
         $scope.startOver = function() {
-            $scope.showStory=false;
-            $scope.showInputs=true;
+            $scope.verified = false;
+            $scope.showStory = false;
+            $scope.showInputs = true;
 
-            $scope.relative1 = "";
-            $scope.adjective1 = "";
-            $scope.adjective2 = "";
-            $scope.adjective3 = "";
-            $scope.person1 = "";
-            $scope.adjective4 = "";
-            $scope.person1 = "";
-            $scope.adjective5 = "";
-            $scope.verbed = "";
-            $scope.body = "";
-            $scope.verbing = "";
-            $scope.nounpl = "";
-            $scope.noun = "";
-            $scope.adverb = "";
-            $scope.verb1 = "";
-            $scope.verb2 = "";
-            $scope.hugenumber = "";
-            $scope.relative2 = "";
-            $scope.person2 = "";
+
+            $scope.relative1 = "Dixie";
+            $scope.adjective1 = "red";
+            $scope.adjective2 = "blue";
+            $scope.adjective3 = "green";
+            $scope.person1 = "Lucy";
+            $scope.adjective4 = "bumpy";
+            $scope.adjective5 = "crazy";
+            $scope.verbed = "danced";
+            $scope.body = "arm";
+            $scope.verbing = "swimming";
+            $scope.nounpl = "cars";
+            $scope.noun = "bed";
+            $scope.adverb = "slight";
+            $scope.verb1 = "ate";
+            $scope.verb2 = "step";
+            $scope.hugenumber = 7000;
+            $scope.relative2 = "cousin";
+            $scope.person2 = "Molly";
         };
     });
