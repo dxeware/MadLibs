@@ -40,6 +40,8 @@ body {
   height: 3em;
   background: url("../images/ng-mad-libs-logo.png") center no-repeat;
   background-size: 35%;
+  padding-top: 0.5em;
+  margin-top: 0.5em;
 }
 
 .title-heading {
