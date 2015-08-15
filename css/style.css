@@ -80,9 +80,17 @@ input {
   padding: 2em 4em;
 }
 
-.rotator.ng-hide-remove {
-  opacity: 1;
-  transition: 0s all linear;
+.rotator {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: auto;
+}
+
+.rotator.ng-hide-remove.ng-hide-remove-active,
+.rotator.ng-hide-add {
+  transition: all 3s ease-in-out;
+  transform: rotate(-360deg);
 }
 
 .rotator.ng-hide-add.ng-hide-add-active,
@@ -120,19 +128,6 @@ hr {
     border-bottom: 1px solid #ccc;
     background: black;
     margin-top: 2em;
-}
-
-.rotator {
-  width: 50px;
-  height: 50px;
-  display: block;
-  margin: auto;
-}
-
-.rotator.ng-hide-remove.ng-hide-remove-active,
-.rotator.ng-hide-add {
-  transition: all 3s ease-in-out;
-  transform: rotate(-360deg);
 }
 
 @media (max-width: 700px) {

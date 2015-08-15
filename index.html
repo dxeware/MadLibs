@@ -20,32 +20,32 @@
     <section class="flow">
       <div class="inputs stretch" ng-show="showInputs">
         <form name="myForm" ng-submit="submit()" novalidate>
-        <h1>Provide the following words:</h1>
-        <input type="text" ng-model="relative1" placeholder="{{relativetext}}" required/>
-        <input type="text" ng-model="adjective1" placeholder="{{adjtext}}" required/>
-        <input type="text" ng-model="adjective2" placeholder="{{adjtext}}" required/>
-        <input type="text" ng-model="adjective3" placeholder="{{adjtext}}" required/>
-        <input type="text" ng-model="person1" placeholder="{{persontext}}" size="26" required/>
-        <input type="text" ng-model="adjective4" placeholder="{{adjtext}}" required/>
-        <input type="text" ng-model="adjective5" placeholder="{{adjtext}}" required/>
-        <input type="text" ng-model="verbed" placeholder="{{verbedtext}}" required/>
-        <input type="text" ng-model="body" placeholder="{{bodytext}}" required/>
-        <input type="text" ng-model="verbing" placeholder="{{verbingtext}}" size="20" required/>
-        <input type="text" ng-model="nounpl" placeholder="{{nounpltext}}" required/>
-        <input type="text" ng-model="noun" placeholder="{{nountext}}" required/>
-        <input type="text" ng-model="adverb" placeholder="{{adverbtext}}" required/>
-        <input type="text" ng-model="verb1" placeholder="{{verbtext}}" required/>
-        <input type="text" ng-model="verb2" placeholder="{{verbtext}}" required/>
-        <input type="number" name="hugenumber" ng-model="hugenumber" placeholder="{{hugenumtext}}" ng-min="hugeMin"  required/>
-        <input type="text" ng-model="relative2" placeholder="{{relativetext}}" required/>
-        <input type="text" ng-model="person2" placeholder="{{persontext}}" size="26" required/>
-        <hr size="4" noshade>
-        <span class="error" ng-model="errorMsg">{{ errorMsg }}</span>
+          <h1>Provide the following words:</h1>
+          <input type="text" ng-model="relative1" placeholder="{{relativetext}}" required/>
+          <input type="text" ng-model="adjective1" placeholder="{{adjtext}}" required/>
+          <input type="text" ng-model="adjective2" placeholder="{{adjtext}}" required/>
+          <input type="text" ng-model="adjective3" placeholder="{{adjtext}}" required/>
+          <input type="text" ng-model="person1" placeholder="{{persontext}}" size="26" required/>
+          <input type="text" ng-model="adjective4" placeholder="{{adjtext}}" required/>
+          <input type="text" ng-model="adjective5" placeholder="{{adjtext}}" required/>
+          <input type="text" ng-model="verbed" placeholder="{{verbedtext}}" required/>
+          <input type="text" ng-model="body" placeholder="{{bodytext}}" required/>
+          <input type="text" ng-model="verbing" placeholder="{{verbingtext}}" size="20" required/>
+          <input type="text" ng-model="nounpl" placeholder="{{nounpltext}}" required/>
+          <input type="text" ng-model="noun" placeholder="{{nountext}}" required/>
+          <input type="text" ng-model="adverb" placeholder="{{adverbtext}}" required/>
+          <input type="text" ng-model="verb1" placeholder="{{verbtext}}" required/>
+          <input type="text" ng-model="verb2" placeholder="{{verbtext}}" required/>
+          <input type="number" name="hugenumber" ng-model="hugenumber" placeholder="{{hugenumtext}}" ng-min="hugeMin"  required/>
+          <input type="text" ng-model="relative2" placeholder="{{relativetext}}" required/>
+          <input type="text" ng-model="person2" placeholder="{{persontext}}" size="26" required/>
+          <hr size="4" noshade>
+          <span class="error" ng-model="errorMsg">{{ errorMsg }}</span>
+          <input type="submit" value="Generate My MadLib">
+        </form>
         <a>
           <img class="rotator" ng-show="verified" alt="" src="./images/circular_arrows.png">
         </a>
-        <input type="submit" value="Generate My MadLib">
-      </form>
       </div>
     </section>
     <section class="flow">

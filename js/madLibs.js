@@ -19,25 +19,6 @@ angular.module('madLibs', ['ngAnimate'])
         $scope.verbtext = "VERB";
         $scope.hugenumtext = "HUGE NUMBER";
 
-        $scope.relative1 = "Dixie";
-            $scope.adjective1 = "red";
-            $scope.adjective2 = "blue";
-            $scope.adjective3 = "green";
-            $scope.person1 = "Lucy";
-            $scope.adjective4 = "bumpy";
-            $scope.adjective5 = "crazy";
-            $scope.verbed = "danced";
-            $scope.body = "arm";
-            $scope.verbing = "swimming";
-            $scope.nounpl = "cars";
-            $scope.noun = "bed";
-            $scope.adverb = "slight";
-            $scope.verb1 = "ate";
-            $scope.verb2 = "step";
-            $scope.hugenumber = 7000;
-            $scope.relative2 = "cousin";
-            $scope.person2 = "Molly";
-
         // Validity checking of answers and show story is OK
         $scope.submit = function() {
             console.log("Caught form submission!");
@@ -67,24 +48,23 @@ angular.module('madLibs', ['ngAnimate'])
             $scope.showStory = false;
             $scope.showInputs = true;
 
-
-            $scope.relative1 = "Dixie";
-            $scope.adjective1 = "red";
-            $scope.adjective2 = "blue";
-            $scope.adjective3 = "green";
-            $scope.person1 = "Lucy";
-            $scope.adjective4 = "bumpy";
-            $scope.adjective5 = "crazy";
-            $scope.verbed = "danced";
-            $scope.body = "arm";
-            $scope.verbing = "swimming";
-            $scope.nounpl = "cars";
-            $scope.noun = "bed";
-            $scope.adverb = "slight";
-            $scope.verb1 = "ate";
-            $scope.verb2 = "step";
-            $scope.hugenumber = 7000;
-            $scope.relative2 = "cousin";
-            $scope.person2 = "Molly";
+            $scope.relative1 = "";
+            $scope.adjective1 = "";
+            $scope.adjective2 = "";
+            $scope.adjective3 = "";
+            $scope.person1 = "";
+            $scope.adjective4 = "";
+            $scope.adjective5 = "";
+            $scope.verbed = "";
+            $scope.body = "";
+            $scope.verbing = "";
+            $scope.nounpl = "";
+            $scope.noun = "";
+            $scope.adverb = "";
+            $scope.verb1 = "";
+            $scope.verb2 = "";
+            $scope.hugenumber = "";
+            $scope.relative2 = "";
+            $scope.person2 = "";
         };
     });
