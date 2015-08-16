@@ -44,12 +44,12 @@
           <input type="submit" value="Generate My MadLib">
         </form>
         <a>
-          <img class="rotator" ng-show="verified" alt="" src="./images/circular_arrows.png">
+          <img class="rotator" ng-show="showStory" alt="" src="./images/circular_arrows.png">
         </a>
       </div>
     </section>
     <section class="flow">
-      <div class="story stretch" ng-show="verified && showStory">
+      <div class="story stretch" ng-show="showStory">
         <p> Dear {{ relative1 }},<br>
           I am having a(n) {{ adjective1 }} time at camp. The counselor is {{ adjective2 }} and the food is {{ adjective3 }}. I met {{ person1 }} and we became {{ adjective4 }} friends. Unfortunately, {{ person1 }} is {{ adjective5 }} and I {{ verbed }} my {{ body }} so we couldn`t go {{ verbing }} like everybody else. I need more {{ nounpl }} and a {{ noun }} sharpener, so please {{ adverb }} {{ verb1 }} more when you {{ verb2 }} back. I miss you so much, it feels like {{ hugenumber }} days until I will be home!!! :)<br>
           Your {{ relative2 }},<br>

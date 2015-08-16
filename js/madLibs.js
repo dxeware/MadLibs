@@ -3,7 +3,6 @@ angular.module('madLibs', ['ngAnimate'])
 
         $scope.showInputs = true;
         $scope.showStory = false;
-        $scope.verified = false;
         $scope.hugeMin = 2000;
 
         //Text values for input placeholder
@@ -35,7 +34,6 @@ angular.module('madLibs', ['ngAnimate'])
             } else {
                 console.log('All inputs are OK');
                 $scope.errorMsg = "";
-                $scope.verified = true;
                 $scope.showInputs = false;
                 $scope.showStory = true;
             }
@@ -44,7 +42,6 @@ angular.module('madLibs', ['ngAnimate'])
 
         // Reset in order to start over
         $scope.startOver = function() {
-            $scope.verified = false;
             $scope.showStory = false;
             $scope.showInputs = true;
 
